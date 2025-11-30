@@ -1,31 +1,25 @@
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Fale conosco:</h2>
-                <hr class="primary">
-                <p>Pronto para deixar a IA transformar sua empresa? Entre em contato conosco ou envie um e-mail — 
-                    nós vamos entender suas necessidades, identificar oportunidades e criar soluções inteligentes que tragam resultados reais para o seu negócio.</p>
-            </div>
-        <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://wa.me/{{ site.whatsapp_number }}" target="_blank">
+    <div class="col-lg-4 text-center">
+        <a href="https://wa.me/{{ site.whatsapp_number }}" target="_blank">
             <i class="fa fa-whatsapp fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.whatsapp_display }}</p>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.email }}</p>
-            </a>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://github.com/{{ site.github_username }}">
-            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.github_username }}</p>
-            </a>
-        </div>
-
+            <p>{{ site.whatsapp_display }}</p>
+        </a>
     </div>
+
+    <div class="col-lg-4 text-center">
+        <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+            <p>{{ site.email }}</p>
+        </a>
+    </div>
+
+    <div class="col-lg-4 text-center">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank">
+            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+            <p>{{ site.github_username }}</p>
+        </a>
+    </div>
+</div>
 </section>
