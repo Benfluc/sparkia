@@ -9,4 +9,5 @@ A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/templa
 Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
 
 Montes Claros - MG
+
 lucio.benfica@icloud.com
