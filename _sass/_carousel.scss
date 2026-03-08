@@ -1,0 +1,42 @@
+.ai-carousel{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.ai-card{
+width:220px;
+cursor:pointer;
+transition:all .4s ease;
+text-align:center;
+}
+
+.ai-card img{
+width:100%;
+border-radius:12px;
+}
+
+.ai-card-text{
+opacity:0;
+max-height:0;
+overflow:hidden;
+transition:all .4s ease;
+font-size:14px;
+margin-top:10px;
+color:#ddd;
+}
+
+.ai-card:hover{
+transform:scale(1.05);
+}
+
+.ai-card.active{
+width:340px;
+}
+
+.ai-card.active .ai-card-text{
+opacity:1;
+max-height:200px;
+}
