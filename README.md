@@ -28,32 +28,6 @@ A SparkIA ajuda empresas a extrair valor de seus dados e a aplicar inteligência
 - Bundler
 - Jekyll
 
-## Como executar localmente
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/Benfluc/sparkia.git
-cd sparkia
-```
-
-Instale as dependências:
-
-```bash
-bundle install
-```
-
-Inicie o servidor local:
-
-```bash
-bundle exec jekyll serve
-```
-
-O site ficará disponível em http://localhost:4000.
-
-## Deploy
-
-O site é publicado automaticamente via GitHub Pages a partir da branch master.
 
 ## Contato
 
