@@ -1,14 +1,13 @@
 # Site settings
 title: SparkIA
 email: sparkiaconsultoria@gmail.com
-description: >
-    A SparkIA ajuda empresas a extrair valor de seus dados e aplicar Inteligência Artificial em processos de negócio, com soluções de chatbots, automação de processos e análise preditiva de vendas.
-  baseurl: ""
-  url: "https://benfluc.github.io/sparkia"
+description: "A SparkIA ajuda empresas a extrair valor de seus dados e aplicar Inteligência Artificial em processos de negócio, com soluções de chatbots, automação de processos e análise preditiva de vendas."
+baseurl: ""
+url: "https://benfluc.github.io/sparkia"
 
-  twitter_username:
-  github_username: benfluc
-  whatsapp_display: "(38) 99959-9525"
+twitter_username:
+github_username: benfluc
+whatsapp_display: "(38) 99959-9525"
 
-  # Build settings
-  markdown: kramdown
+# Build settings
+markdown: kramdown
