@@ -5,28 +5,68 @@
         <hr class="primary">
 
         <div class="row justify-content-center" style="margin-top: 30px;">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName" class="sr-only">Nome</label>
+                        <input type="text" class="form-control" id="contactName" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail" class="sr-only">E-mail</label>
+                        <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage" class="sr-only">Mensagem</label>
+                        <textarea class="form-control" id="contactMessage" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" aria-label="Enviar mensagem por e-mail">Enviar Mensagem</button>
+                    <p id="contactFormStatus" class="text-muted" style="margin-top:10px; display:none; color:white;">Abrindo seu aplicativo de e-mail...</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 40px;">
 
             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                <a href="https://wa.me/5538999599525" target="_blank">
+                <a href="https://wa.me/5538999599525" target="_blank" aria-label="Conversar pelo WhatsApp">
                     <i class="fa fa-whatsapp fa-3x wow bounceIn" style="color:white;" data-wow-delay=".1s"></i>
                     <p style="color:white;"> {{ site.whatsapp_display }}</p>
                 </a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                <a href="mailto:sparkiaconsultoria@gmail.com">
+                <a href="mailto:sparkiaconsultoria@gmail.com" aria-label="Enviar e-mail para a SparkIA">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" style="color:white;" data-wow-delay=".1s"></i>
                     <p style="color:white;"> {{ site.email }}</p>
                 </a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                <a href="https://github.com/benfluc" target="_blank">
+                <a href="https://github.com/benfluc" target="_blank" aria-label="Ver perfil da SparkIA no GitHub">
                     <i class="fa fa-github fa-3x wow bounceIn" style="color:white;" data-wow-delay=".1s"></i>
                     <p style="color:white;"> {{ site.github_username }}</p>
                 </a>
             </div>
 
         </div>
+
+        <script>
+            (function(){
+                var form = document.getElementById('contactForm');
+                if (form) {
+                    form.addEventListener('submit', function(e){
+                        e.preventDefault();
+                        var name = document.getElementById('contactName').value;
+                        var email = document.getElementById('contactEmail').value;
+                        var message = document.getElementById('contactMessage').value;
+                        var subject = encodeURIComponent('Contato via site - ' + name);
+                        var body = encodeURIComponent(message + '\n\nE-mail para retorno: ' + email);
+                        window.location.href = 'mailto:{{ site.email }}?subject=' + subject + '&body=' + body;
+                    });
+                }
+            })();
+        </script>
+
     </div>
 </section>
+        </script>
