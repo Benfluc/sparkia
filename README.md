@@ -15,20 +15,6 @@ A SparkIA ajuda empresas a extrair valor de seus dados e a aplicar inteligência
 - Incremento de vendas e serviços: sistema de recomendação de produtos e análise preditiva de vendas
 - Automação de processos: geração automática de textos, posts e anúncios, resposta automática de e-mails, extração de informações de PDFs, entre outros
 
-## Tecnologias
-
-- Jekyll (gerador de site estático)
-- Tema Creative, da Start Bootstrap
-- Bootstrap, HTML, CSS e JavaScript
-- Publicado via GitHub Pages
-
-## Requisitos
-
-- Ruby
-- Bundler
-- Jekyll
-
-
 ## Contato
 
 - Autor: Lúcio J. Benfica
