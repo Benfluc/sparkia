@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SparkIA — Consultoria em Inteligência Artificial e Ciência de Dados</title>
+<meta name="description" content="Consultoria em Inteligência Artificial e Ciência de Dados: aplicação de IA em negócios, coleta de dados, websites, monitoramento e chatbots.">
+<meta name="theme-color" content="#060A10">
+
+<!-- Compartilhamento em redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="SparkIA — Consultoria em Inteligência Artificial e Ciência de Dados">
+<meta property="og:description" content="Transformamos dados em decisões que geram resultado.">
+<meta property="og:image" content="img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<!-- ===================== FUNDO ANIMADO ===================== -->
+<div class="fundo" aria-hidden="true">
+  <div class="fundo__grade"></div>
+  <div class="fundo__brilho fundo__brilho--1"></div>
+  <div class="fundo__brilho fundo__brilho--2"></div>
+  <div class="fundo__brilho fundo__brilho--3"></div>
+  <canvas id="particulas"></canvas>
+</div>
+
+<!-- ===================== BARRA DE PROGRESSO ===================== -->
+<div class="progresso" id="progresso" aria-hidden="true"></div>
+
+<!-- ===================== CABEÇALHO ===================== -->
+<header class="cabecalho" id="cabecalho">
+  <div class="container cabecalho__linha">
+    <a href="#topo" class="marca" aria-label="SparkIA — início">
+      <img src="img/simbolo.png" alt="" class="marca__simbolo">
+      <img src="img/logo-horizontal-claro.png" alt="SparkIA" class="marca__texto">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <ul class="nav__lista" data-lista="menu"></ul>
+      <a class="btn btn--primario btn--pequeno nav__cta" data-link="botaoTopo"></a>
+    </nav>
+
+    <button class="hamburguer" id="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero__grade">
+      <div class="hero__texto">
+        <p class="etiqueta anima" data-txt="hero.etiqueta"></p>
+        <h1 class="hero__titulo anima" data-txt="hero.titulo"></h1>
+        <p class="hero__sub anima" data-txt="hero.subtitulo"></p>
+        <div class="hero__botoes anima">
+          <a class="btn btn--primario" data-link="hero.botaoPrincipal"></a>
+          <a class="btn btn--fantasma" data-link="hero.botaoSecundario"></a>
+        </div>
+      </div>
+
+      <div class="hero__arte anima" aria-hidden="true">
+        <div class="orbe"></div>
+        <img src="img/simbolo.png" alt="" class="hero__simbolo">
+        <div class="anel anel--1"></div>
+        <div class="anel anel--2"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="indicadores anima" data-lista="hero.indicadores"></ul>
+    </div>
+  </section>
+
+  <!-- ===================== QUEM SOMOS ===================== -->
+  <section class="secao" id="quem-somos">
+    <div class="container">
+      <div class="sobre__grade">
+        <div class="anima">
+          <p class="etiqueta" data-txt="quemSomos.etiqueta"></p>
+          <h2 class="titulo" data-txt="quemSomos.titulo"></h2>
+          <div class="texto" data-lista="quemSomos.paragrafos"></div>
+        </div>
+        <div class="pilares" data-lista="quemSomos.pilares"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="secao secao--alt" id="servicos">
+    <div class="container">
+      <div class="cabecalho-secao anima">
+        <p class="etiqueta" data-txt="servicos.etiqueta"></p>
+        <h2 class="titulo" data-txt="servicos.titulo"></h2>
+        <p class="subtitulo" data-txt="servicos.subtitulo"></p>
+      </div>
+      <div class="servicos" data-lista="servicos.itens"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESSO ===================== -->
+  <section class="secao" id="processo">
+    <div class="container">
+      <div class="cabecalho-secao anima">
+        <p class="etiqueta" data-txt="processo.etiqueta"></p>
+        <h2 class="titulo" data-txt="processo.titulo"></h2>
+        <p class="subtitulo" data-txt="processo.subtitulo"></p>
+      </div>
+      <ol class="etapas" data-lista="processo.etapas"></ol>
+    </div>
+  </section>
+
+  <!-- ===================== CLIENTES ===================== -->
+  <section class="secao secao--alt" id="clientes">
+    <div class="container">
+      <div class="cabecalho-secao anima">
+        <p class="etiqueta" data-txt="clientes.etiqueta"></p>
+        <h2 class="titulo" data-txt="clientes.titulo"></h2>
+        <p class="subtitulo" data-txt="clientes.subtitulo"></p>
+      </div>
+    </div>
+
+    <div class="esteira anima" aria-label="Clientes atendidos">
+      <div class="esteira__trilho" data-lista="clientes.logos"></div>
+    </div>
+
+    <div class="container">
+      <div class="depoimentos anima">
+        <div class="depoimentos__palco" data-lista="clientes.depoimentos"></div>
+        <div class="depoimentos__controles">
+          <button class="seta" id="depo-anterior" aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <div class="pontos" id="depo-pontos"></div>
+          <button class="seta" id="depo-proximo" aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="secao" id="contato">
+    <div class="container">
+      <div class="contato__grade">
+
+        <div class="anima">
+          <p class="etiqueta" data-txt="contato.etiqueta"></p>
+          <h2 class="titulo" data-txt="contato.titulo"></h2>
+          <p class="subtitulo subtitulo--esq" data-txt="contato.subtitulo"></p>
+          <ul class="contato__itens" id="contato-itens"></ul>
+          <div class="redes" id="redes"></div>
+        </div>
+
+        <form class="formulario anima" id="formulario" novalidate>
+          <h3 class="formulario__titulo" data-txt="contato.formulario.titulo"></h3>
+
+          <div class="campo">
+            <input type="text" id="f-nome" name="nome" required placeholder=" ">
+            <label for="f-nome" data-txt="contato.formulario.campos.nome"></label>
+          </div>
+
+          <div class="campo">
+            <input type="email" id="f-email" name="email" required placeholder=" ">
+            <label for="f-email" data-txt="contato.formulario.campos.email"></label>
+          </div>
+
+          <div class="campo">
+            <input type="text" id="f-empresa" name="empresa" placeholder=" ">
+            <label for="f-empresa" data-txt="contato.formulario.campos.empresa"></label>
+          </div>
+
+          <div class="campo campo--select">
+            <select id="f-assunto" name="assunto"></select>
+            <label for="f-assunto" class="label--fixo" data-txt="contato.formulario.campos.assuntoSel"></label>
+          </div>
+
+          <div class="campo">
+            <textarea id="f-mensagem" name="mensagem" rows="4" required placeholder=" "></textarea>
+            <label for="f-mensagem" data-txt="contato.formulario.campos.mensagem"></label>
+          </div>
+
+          <button type="submit" class="btn btn--primario btn--bloco" data-txt="contato.formulario.botao"></button>
+          <p class="formulario__aviso" id="formulario-aviso" role="status"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="rodape">
+  <div class="container rodape__grade">
+    <div>
+      <img src="img/logo-horizontal-claro.png" alt="SparkIA" class="rodape__logo">
+      <p class="rodape__texto" data-txt="rodape.texto"></p>
+      <p class="rodape__cnpj" id="rodape-cnpj"></p>
+    </div>
+    <nav class="rodape__links" aria-label="Navegação do rodapé">
+      <ul data-lista="menu"></ul>
+    </nav>
+    <div class="rodape__contato" id="rodape-contato"></div>
+  </div>
+  <div class="container rodape__base">
+    <p id="rodape-direitos"></p>
+  </div>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a class="whatsapp" id="whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+</a>
+
+<!-- Botão voltar ao topo -->
+<button class="ao-topo" id="ao-topo" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<noscript>
+  <div class="container" style="padding:6rem 0;text-align:center">
+    <h1>SparkIA</h1>
+    <p>Este site precisa de JavaScript ativado para exibir o conteúdo.</p>
+  </div>
+</noscript>
+
+<script src="js/conteudo.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

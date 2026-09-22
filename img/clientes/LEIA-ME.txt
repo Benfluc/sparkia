@@ -1,0 +1,11 @@
+Coloque aqui os arquivos de logo dos seus clientes.
+
+Recomendações:
+- formato PNG com fundo transparente (ou SVG)
+- altura aproximada de 80 pixels
+- nome do arquivo sem acentos e sem espacos, ex.: norte-agro.png
+
+Depois, em js/conteudo.js, bloco "clientes" -> "logos", troque:
+    { nome: "Norte Agro", logo: null },
+por:
+    { nome: "Norte Agro", logo: "img/clientes/norte-agro.png" },
