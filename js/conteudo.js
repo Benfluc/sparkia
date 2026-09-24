@@ -49,7 +49,7 @@ const CONTEUDO = {
   hero: {
     etiqueta: "Inteligência Artificial aplicada a negócios reais",
     titulo: "Transformamos <b>dados</b> em decisões<br>que geram resultado",
-    subtitulo: "Somos uma consultoria de tecnologia que ajuda empresas a sair da intuição e passar a decidir com evidência. Diagnóstico, dados, modelos e automação — do primeiro diagnóstico ao sistema rodando em produção.",
+    subtitulo: "Somos uma consultoria de tecnologia que ajuda empresas a sair da intuição e passar a decidir com evidência. Diagnóstico, dados, modelos e automação. Do primeiro diagnóstico ao sistema rodando em produção.",
     botaoPrincipal:   { rotulo: "Agendar diagnóstico gratuito", alvo: "#contato" },
     botaoSecundario:  { rotulo: "Ver nossos serviços", alvo: "#servicos" },
     // Números que aparecem logo abaixo. Use o formato que quiser no "valor".
@@ -68,7 +68,7 @@ const CONTEUDO = {
     etiqueta: "Quem somos",
     titulo: "Tecnologia com método,<br>resultado com <b>evidência</b>",
     paragrafos: [
-      "A SparkIA nasceu da união entre pesquisa acadêmica e prática de mercado. Trabalhamos na fronteira entre ciência de dados, inteligência artificial e desenvolvimento de software — e nossa obsessão é simples: entregar tecnologia que muda um indicador de negócio, não apenas uma demonstração bonita.",
+      "A SparkIA nasceu da união entre pesquisa acadêmica e prática de mercado. Trabalhamos na fronteira entre ciência de dados, inteligência artificial e desenvolvimento de software. Nossa obsessão é simples: entregar tecnologia que muda um indicador de negócio, não apenas uma demonstração bonita.",
       "Atuamos lado a lado com o cliente. Entendemos o processo antes de propor a ferramenta, medimos o ponto de partida antes de prometer ganho e deixamos tudo documentado para que a sua equipe siga sozinha depois que sairmos."
     ],
     // Pilares/diferenciais exibidos em cartões
@@ -127,7 +127,7 @@ const CONTEUDO = {
       {
         icone: "codigo",
         titulo: "Criação de websites e sistemas",
-        texto: "Sites institucionais, landing pages de alta conversão, portais e sistemas web sob medida — rápidos, responsivos e preparados para buscadores.",
+        texto: "Sites institucionais, landing pages de alta conversão, portais e sistemas web sob medida: rápidos, responsivos e preparados para buscadores.",
         marcadores: ["Sites e landing pages", "Sistemas web sob medida", "Otimização para SEO"]
       },
       {
